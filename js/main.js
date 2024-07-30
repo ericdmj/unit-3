@@ -17,10 +17,10 @@ function setMap() {
 
     //create Albers equal area conic projection centered on France
     var projection = d3.geoAlbers()
-        .center([0, 38.2])
-        .rotate([82.8, 0, 0])
+        .center([0, 38])
+        .rotate([79.5, 0, 0])
         .parallels([36, 39])
-        .scale(3200)
+        .scale(8000)
         .translate([width / 2, height / 2]);
 
     var path = d3.geoPath()
@@ -65,7 +65,7 @@ function setMap() {
             .enter()
             .append("path")
             .attr("class", function(d){
-                return "municipalities " + d.properties.muni_code;
+                return "municipalities " + d.properties.code;
             })
             .attr("d", path);
     }

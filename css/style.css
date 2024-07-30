@@ -1,25 +1,21 @@
-.axis path,
-.axis line {
-    fill: none;
-    stroke: black;
+svg {
+    background-color: #c1e1f0;
+}
+
+
+.states {
+    fill: #f4f0e7;
+    stroke: #445C53;
     stroke-width: 1px;
-    shape-rendering: crispEdges;
 }
 
-.axis text {
-    font-family: sans-serif;
-    font-size: 0.9em;
-}
-
-.title {
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
+.municipalities {
+    fill:#445C53;
+    stroke:#DBCDAD;
+    stroke-width: .5px;
 }
 
 
-.countries {
-    fill: #FFF;
-    stroke: #CCC;
-    stroke-width: 2px;
+.map {
+    border: medium ridge #916500;
 }
